@@ -8,9 +8,7 @@ import org.openqa.selenium.support.FindBy;
 public class HomePage {
     private WebDriver driver ;
 
-    // locators
-     @FindBy(xpath ="//*[@id=\"content\"]/ul/li[21]/a")
-     private WebElement FormAuth ;
+
 
     // constructor
     public HomePage(WebDriver driver)
@@ -20,8 +18,20 @@ public class HomePage {
 
     //methods
 
-    public void clickAuth()
+//    public void clickFormAuth()
+//    {
+//        Clicklink("Form Authentication");
+//    }
+
+    public void ClickDropDown ()
     {
-        FormAuth.click();
+        Clicklink("DropDown");
     }
+
+    private void Clicklink (String linktext)
+    {
+        driver.findElement(By.linkText(linktext)).click();
+    }
+
+
 }
