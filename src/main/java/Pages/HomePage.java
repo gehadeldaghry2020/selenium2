@@ -22,10 +22,25 @@ public class HomePage {
 //    {
 //        Clicklink("Form Authentication");
 //    }
+//
+//    public void ClickDropDown ()
+//    {
+//        Clicklink("DropDown");
+//    }
 
-    public void ClickDropDown ()
+//    public void JavaScriptAlert()
+//    {
+//        Clicklink("JavaScript Alerts");
+//    }
+
+//    public void ClickKeyPresses()
+//    {
+//        Clicklink("Key Presses");
+//    }
+
+    public void ClickFileUpload()
     {
-        Clicklink("DropDown");
+        Clicklink("File Upload");
     }
 
     private void Clicklink (String linktext)
